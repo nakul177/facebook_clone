@@ -1,39 +1,39 @@
 .posts {
-    display: flex;
-    margin-top:20px;
-    margin-left: 20px;
-    flex-direction: column;
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    width: 40%;
+  display: flex;
+  margin-top: 20px;
+  margin-left: 20px;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 40%;
 }
 
 .messageSender__top {
-    display: flex;
-    border-bottom: 1px solid #eff2f5;
-    padding-bottom: 15px;
-    padding: 15px;
+  display: flex;
+  border-bottom: 1px solid #eff2f5;
+  padding-bottom: 15px;
+  padding: 15px;
 }
 
 .messageSender__top > form {
-    flex: 1 ;
-    display: flex;
+  flex: 1;
+  display: flex;
 }
 
 .messageSender__top__input {
-    outline-width: 0;
-    border: none;
-    padding: 5px 20px;
-    margin: 0 10px;
-    border-radius: 999px;
-    background-color:#eff2f5 ;
-    width: 100%;
-    font-size: 20px;
+  outline-width: 0;
+  border: none;
+  padding: 5px 20px;
+  margin: 0 10px;
+  border-radius: 999px;
+  background-color: #eff2f5;
+  width: 100%;
+  font-size: 20px;
 }
 
 .messageSender__top > form > button {
-    display: none;
+  display: none;
 }
 
 /* button {
@@ -44,3 +44,46 @@
     border: none;
      background-color: #2e81f4;
 } */
+
+.messageSender__bottom {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.messageSender__bottom__options {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  color: gray;
+  margin: 5px;
+}
+
+.messageSender__bottom__options > h3 {
+  font-size: medium;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.messageSender__bottom__options:hover {
+  background-color: #eff2f5;
+  border-radius: 20px;
+}
+
+.messageSender__bottom__options > button {
+  display: flex;
+  border: none;
+  background-color: transparent;
+}
+.messageSender__bottom__options > button > h3 {
+  font-size: medium;
+  cursor: pointer;
+  align-items: center;
+  color: gray;
+  margin: 5px;
+}
+
+.messageSender__bottom__options > button > .MuiSvgIcon-root {
+    border-radius: 5px;
+}
+
+
