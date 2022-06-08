@@ -36,6 +36,11 @@
   display: none;
 }
 
+.messageSender__top__img {
+  margin-left: 70px;
+} 
+
+
 .messageSender__bottom {
   display: flex;
   justify-content: space-evenly;

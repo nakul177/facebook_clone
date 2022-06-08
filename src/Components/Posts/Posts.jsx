@@ -126,7 +126,7 @@ export const Posts = () => {
               </button>
             </form>
           </div>
-          <div>
+          <div className="messageSender__top__img" >
             <img src={imgUrls} alt="" />
           </div>
         </div>
