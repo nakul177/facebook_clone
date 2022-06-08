@@ -5,6 +5,7 @@ import Modal from "@mui/material/Modal";
 import Box from "@mui/material/Box";
 import React, { useState } from "react";
 import "./Posts.css";
+import { PostList } from "./PostList/PostList";
 
 const style = {
   position: "absolute",
@@ -26,20 +27,19 @@ export const Posts = () => {
   const [gifs, setGifs] = useState([]);
   const [loading, setLoading] = useState(false);
   const [input, setInput] = useState("");
-  const [data, setData] = useState("");
-  const [send, setSend] = useState([]);
+  const [imgUrls, setImgurls] = useState("");
+  const [data, setData] = useState([]);
 
   const handleSubmit = (event) => {
-    console.log("send");
     event.preventDefault();
     const obj = {
       title: input,
-      img: data,
+      imgUrl: imgUrls,
     };
-    setSend([...send, obj]);
+    setData([...data, obj]);
     setSearch("");
     setInput("");
-    setData("");
+    setImgurls("");
   };
 
   const searchGif = () => {
@@ -61,19 +61,19 @@ export const Posts = () => {
           );
         })
         .catch((err) => {
-          setLoading(true);
+          setLoading(false);
           alert("Something went wrong");
         });
     }
   };
 
   const handle = (url) => {
-    console.log(url);
-    setData(url);
+    setImgurls(url);
+    setOpen(false)
   };
 
   return (
-    <div>
+    <div className="main">
       <div className="posts">
         <Modal
           open={open}
@@ -99,7 +99,7 @@ export const Posts = () => {
                 </div>
                 <div className="list">
                   {gifs.map((gif) => (
-                    <div onClick={() => handle(gif)} className="listgif" >
+                    <div onClick={() => handle(gif)} className="listgif">
                       <img src={gif} alt="" />
                     </div>
                   ))}
@@ -127,7 +127,7 @@ export const Posts = () => {
             </form>
           </div>
           <div>
-            <img src={data} alt="" />
+            <img src={imgUrls} alt="" />
           </div>
         </div>
 
@@ -148,17 +148,9 @@ export const Posts = () => {
           </div>
         </div>
       </div>
-      <div className="showinput">
-        <h1>Show</h1>
-        {send.map((e) => {
-          return (
-            <div>
-              <h1>{e.title}</h1>
-              <img src={e.img} alt="" />
-            </div>
-          );
-        })}
-      </div>
+      {data.map((elem) => (
+        <PostList list={elem} />
+      ))}
     </div>
   );
 };

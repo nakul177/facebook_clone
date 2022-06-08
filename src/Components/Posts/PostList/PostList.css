@@ -1,0 +1,29 @@
+.postlist {
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-left: 20px;
+  background-color: white;
+  max-width: 500px;
+  border: 1px solid lightgray;
+}
+
+.post__img {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: contain;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+.post__text {
+  font-weight: bold;
+  font-size: 30px;
+  padding: 10px;
+}
+.post__header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.post__avtar {
+  margin-right: 10px;
+}

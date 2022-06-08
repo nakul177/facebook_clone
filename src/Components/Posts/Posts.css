@@ -74,9 +74,8 @@
 }
 
 .messageSender__bottom__options > button > .MuiSvgIcon-root {
-    border-radius: 5px;
+  border-radius: 5px;
 }
-
 
 .gif__header > button {
   padding: 5px;
@@ -84,7 +83,7 @@
   color: white;
   border-radius: 10px;
   border: none;
-   background-color: #2e81f4;
+  background-color: #2e81f4;
 }
 
 .gif > h1 {
@@ -107,3 +106,25 @@
   width: 200px;
   height: 250px;
 }
+
+/* .loading{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 5px solid black;
+  border-top: 5px solid white ;
+  border-radius: 50%;
+  transform: rotate(0deg);
+  animation: loading 5000ms ease-in-out infinite;
+}
+
+@keyframes loading {
+  to{
+    transform:rotate(360deg);
+  }  
+} */
