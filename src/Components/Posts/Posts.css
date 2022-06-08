@@ -36,15 +36,6 @@
   display: none;
 }
 
-/* button {
-    padding: 5px;
-    width: 10%;
-    color: white;
-    border-radius: 10px;
-    border: none;
-     background-color: #2e81f4;
-} */
-
 .messageSender__bottom {
   display: flex;
   justify-content: space-evenly;
@@ -87,3 +78,32 @@
 }
 
 
+.gif__header > button {
+  padding: 5px;
+  width: 20%;
+  color: white;
+  border-radius: 10px;
+  border: none;
+   background-color: #2e81f4;
+}
+
+.gif > h1 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.gif__header > input {
+  outline-width: 0;
+  border: none;
+  padding: 5px 20px;
+  margin: 0 10px;
+  border-radius: 999px;
+  background-color: #eff2f5;
+  width: 50%;
+  font-size: 20px;
+}
+
+.listgif > img {
+  width: 200px;
+  height: 250px;
+}
